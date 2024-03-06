@@ -7,9 +7,15 @@
 
 ## Design constraints:
 
-1. No backend
+1. No login required
 2. Easy to maintain and deploy
-3. Cross-platform
+3. No backend
+4. Cross-platform
+
+## Approach:
+
+1. Use an online keyboard to record audio files for the relevant chords
+2. Build a static site with `jekyll` and host on GitHub Pages
 
 --
 
@@ -135,5 +141,4 @@ Notes:
      class="splash screenshot fragment fade-in"
      data-fragment-index="0"
           />
-
 
