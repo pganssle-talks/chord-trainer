@@ -1,5 +1,7 @@
 JEKYLL=bundle exec jekyll
 SHELL=bash
+VIRTUALENV=virtualenv
+PYTHON=python3.11
 
 $(eval CONFIG= \
 	$(shell find config -maxdepth 1 -type f -name '*.yml' | \
@@ -41,6 +43,20 @@ pages: html
 
 docs:
 	$(SHELL) scripts/make_worktree.sh
+
+venv:
+	$(VIRTUALENV) venv --python=`which $(PYTHON)`
+
+notebook-requirements.txt: venv notebook-requirements.in
+	venv/bin/pip install -U pip-tools
+	venv/bin/pip-compile notebook-requirements.in > notebook-requirements.txt
+
+
+.PHONY: notebook
+notebook: notebook-requirements.txt
+	venv/bin/pip install -r notebook-requirements.txt
+	venv/bin/jupyter notebook
+
 
 .PHONY: clean
 clean:
