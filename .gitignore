@@ -14,3 +14,6 @@ __pycache__
 .ipynb_checkpoints
 .pytest_cache
 .cache
+
+# Local-only resources (inputs)
+raw/*
