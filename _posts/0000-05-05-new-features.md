@@ -26,7 +26,7 @@
 
 # Adaptive mode
 
-Random choice weights are adjusted based on the confusion matrix:
+### Random choice weights are adjusted based on the confusion matrix:
 
 `$$ c_i = \left(\Sigma_{k} M_{i,k}\right) \cdot \left(M_{i,i} + w_w\cdot\left(\Sigma_{k\neq i}M_{i,k}\right) + w_m\cdot\left(\Sigma_{k\neq i}M_{k,i}\right)\right) $$`
 
@@ -48,8 +48,9 @@ Random choice weights are adjusted based on the confusion matrix:
     <td>Weight associated with choosing a given color when presented with a different color</td>
 </tr>
 </table>
+<br/><br/>
 
-- Add constraints and iteratively normalize to get the weights for each color
+### Constraints added and vector is normalized iteratively
 
 --
 
