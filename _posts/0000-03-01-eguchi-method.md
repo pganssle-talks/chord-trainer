@@ -17,10 +17,11 @@
 # Eguchi's Method
 
 <ul>
-    <li class="fragment fade-in" data-fragment-index="0">Chords associated with colored flags</li>
-    <li class="fragment fade-in" data-fragment-index="1">Child must be able to identify each chord with 100% accuracy</li>
-    <li class="fragment fade-in" data-fragment-index="2">New chords are introduced every 2 weeks</li>
-    <li class="fragment fade-in" data-fragment-index="3">Do 25 identifications per session, <u>5 sessions per day</u></li>
+    <li>Chords associated with colored flags</li>
+    <li class="fragment fade-in" data-fragment-index="0">Child must be able to identify each chord with 100% accuracy</li>
+    <li class="fragment fade-in" data-fragment-index="1">New chords are introduced every 2 weeks</li>
+    <li class="fragment fade-in" data-fragment-index="2">Do 25 identifications per session, <u>5 sessions per day</u></li>
+    <li class="fragment fade-in" data-fragment-index="4">When all chords are learned, scale back sessions to maintain 100% accuracy, continue until aged 9</li>
 
 --
 
