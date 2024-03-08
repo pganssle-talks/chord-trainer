@@ -1,8 +1,15 @@
 # Relative and Absolute Pitch
 
-<img class="splash"
-     src="images/stock/swatches.png"
-     alt="A person comparing an item to paint swatches"/>
+<div class="gallery two-high">
+    <div class="gallery-item">
+        <img src="images/frequencies.png"
+          />
+    </div>
+    <div class="gallery-item">
+        <img src="images/frequencies_fft.png"
+          />
+    </div>
+</div>
 
 Notes:
 
