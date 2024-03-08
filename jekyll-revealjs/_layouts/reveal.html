@@ -96,6 +96,8 @@
 
 		<script src="{{ site.reveal_path }}dist/reveal.js"></script>
 		<script src="{{ site.reveal_path }}plugin/markdown/markdown.js"></script>
+		<script src="{{ site.reveal_path }}plugin/math/math.js"></script>
+
 		<script src="{{ site.reveal_path }}plugin/zoom/zoom.js"></script>
 		<script src="{{ site.reveal_path }}plugin/highlight/highlight.js"></script>
 		{% if site.reveal_notes_server %}
@@ -124,6 +126,7 @@
                     RevealHighlight,
                     RevealNotes,
                     RevealZoom,
+                    RevealMath.KaTeX,
                 ],
 
 				{% if site.reveal_options %}
