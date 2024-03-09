@@ -556,6 +556,28 @@ img.sbitem {
     font-size: 0px;
 }
 
+.reveal .slides section .fragment.embolden {
+    opacity: 1;
+    visibility: visible;
+}
+
+.fragment.embolden {
+    opacity: 1;
+    visibility: visible;
+}
+.fragment.embolden.visible {
+    font-weight: bold;
+}
+
+.reveal .slides section .fragment.outline {
+    opacity: 1;
+    visibility: visible;
+}
+
+.fragment.outline.visible {
+    border: 3px solid blue;
+}
+
 /****************************
  *  HACK
  *

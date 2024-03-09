@@ -36,6 +36,7 @@ td.keyboard img {
 
 td.chord-notes {
     width: 7.5dvw;
+    text-align:center;
 }
 
 td.chord-color {
@@ -56,7 +57,7 @@ td.left-border {
 
 <table class="chord-chart">
 <tr>
-    <td class="chord-notes">C E G</td>
+    <td class="chord-notes fragment custom outline" data-fragment-index="0">C E G</td>
     <td class="chord-color">Red</td>
     <td class="chord-name">C</td>
     <td class="keyboard">
@@ -90,7 +91,7 @@ td.left-border {
     <td class="keyboard">
         <img src="images/color_keyboard/green.svg">
     </td>
-    <td class="chord-notes left-border">E G C</td>
+    <td class="chord-notes left-border fragment custom outline" data-fragment-index="0">E G C</td>
     <td class="chord-color">Orange</td>
     <td class="chord-name">C/E</td>
     <td class="keyboard">
@@ -112,9 +113,9 @@ td.left-border {
     </td>
 </tr>
 <tr colwidth="6">
-<table>
+<table class="chord-chart">
 <tr>
-    <td class="chord-notes">G C E</td>
+    <td class="chord-notes fragment custom outline" data-fragment-index="0">G C E</td>
     <td class="chord-color">Brown</td>
     <td class="chord-name">C/G</td>
     <td class="keyboard">
