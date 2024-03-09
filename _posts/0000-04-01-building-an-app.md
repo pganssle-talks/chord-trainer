@@ -23,7 +23,8 @@
 
 <div class="fragment disappearing-fragment fade-out" data-fragment-index="0">
     <img src="images/v000-mvp-yellow.png"
-         class="screenshot"
+         class="screenshot splash"
+         style="height: 75dvh"
          alt="A screenshot of a simple website with a dark background and two
               colored rectangles — a red one on the left and a yellow on the right.
               Beneath it is text that says 0/0 and a pulldown that says 'Yellow (CFA)'"
@@ -72,6 +73,7 @@ Notes:
 
 <img src="images/v001-trainer.png"
      class="splash screenshot"
+     style="height: 75dvh"
      alt="A screenshot of a simple website with a dark background and two
           colored rectangles — a red one on the left and a yellow on the right.
           Beneath it is text that says 0/0 and a pulldown that says 'Yellow (CFA)'"
@@ -83,23 +85,20 @@ Notes:
 
 <div class="fragment disappearing-fragment nospace-fragment fade-out" data-fragment-index="0">
     <img src="images/v002-cat-faces.png"
+         style="height: 75dvh"
          class="splash screenshot"
          alt="Screenshot of the application which now has a neutral cat emoji next to the progress numbers."
               />
 </div>
 
-<div class="gallery two-high fragment fade-in" data-fragment-index="0">
-    <div class="gallery-item">
-        <img src="images/v002-cat-hearts.png"
-             class="screenshot"
-        />
-    </div>
-    <div class="gallery-item">
-        <img src="images/v002-cat-eek.png"
-             class="screenshot"
-             />
-    </div>
-<div>
+<div class="gallery two-high nospace-fragment fragment fade-in" data-fragment-index="0">
+<div class="gallery-item">
+    <img src="images/v002-cat-hearts.png" class="screenshot"/>
+</div>
+<div class="gallery-item">
+    <img src="images/v002-cat-eek.png" class="screenshot"/>
+</div>
+</div>
 
 --
 
@@ -134,11 +133,13 @@ Notes:
 
 <img src="images/v003-done-indicator.png"
      class="splash screenshot fragment disappearing-fragment nospace-fragment fade-out"
+     style="height: 75dvh"
      data-fragment-index="0"
           />
 
 <img src="images/v003-done-indicator-perfect-score.png"
      class="splash screenshot fragment fade-in"
+     style="height: 75dvh"
      data-fragment-index="0"
           />
 
