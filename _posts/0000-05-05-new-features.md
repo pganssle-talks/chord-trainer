@@ -56,8 +56,8 @@
 
 <table style="border: none">
 <tr>
-    <td><img class="splash" src="images/adaptive_example_cm_0.png"></td>
-    <td><img class="splash" src="images/adaptive_example_pie_0.png"></td>
+    <td style="border-bottom: none"><img class="splash" src="images/adaptive_example_cm_0.png"></td>
+    <td style="border-bottom: none"><img class="splash" src="images/adaptive_example_pie_0.png"></td>
 </tr>
 <tr>
     <td>
