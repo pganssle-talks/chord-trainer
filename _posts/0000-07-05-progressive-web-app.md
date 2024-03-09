@@ -36,6 +36,15 @@
 
 --
 
+<div style="display: flex; flex-direction: rows; align-items: center; justify-content:space-around; height: 80dvh">
+<img src="images/pwa-install-app.png" style="max-height:100%; max-width: 30dvh">
+<img src="images/pwa-install-installing.png" style="max-height:100%; max-width: 30dvh">
+<img src="images/pwa-install-icon.png" style="max-height:100%; max-width: 40dvh">
+
+
+
+--
+
 # Introducing the Progressive Web App
 
 <br/>
