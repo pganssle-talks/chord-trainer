@@ -64,18 +64,22 @@ I am writing as a big fan of your Chord Identification Method project -- forgive
 
 # Black Chord Implementation
 
+<div style="height: 15dvh">
 <ul>
 <li>Notes are called out by name, but the names don't matter</li>
 <li class="fragment appear" data-fragment-index="0">Colors are assigned to the black chords, <i>but only the main sequence ones</i></li>
 </ul>
+</div>
 
-<img src="external-images/eguchi-note-names.png"
+<img src="external-images/eguchi-note-names-us.png"
     class="fragment disappearing-fragment nospace-fragment fade-out"
+    style="max-height: 40dvh"
     data-fragment-index="0"
     />
 
-<img src="external-images/eguchi-black-chords.png"
+<img src="external-images/eguchi-black-chords-us.png"
     class="fragment fade-in"
+    style="max-height: 60dvh"
     data-fragment-index="0"
     />
 
