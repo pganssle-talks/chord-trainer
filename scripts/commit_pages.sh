@@ -2,7 +2,7 @@
 set -e
 
 WORKTREE_LOCATION="docs"
-PRIMARY_BRANCH="master"
+PRIMARY_BRANCH="main"
 HOME="$(pwd)"
 
 # If no changes are necessary, we don't have to check the error conditions
