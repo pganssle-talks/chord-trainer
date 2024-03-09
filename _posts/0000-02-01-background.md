@@ -50,7 +50,20 @@ I knew about perfect pitch and thought it might be cool to have, but I had alway
 <br/>
 <br/>
 
-<div class="fragment appear">
+<div class="fragment disappearing-fragment nospace-fragment fade-out" data-fragment-index="0">
+<img src="images/replication_crisis_wikipedia_ss.png">
+</div>
+
+<div class="fragment disappearing-fragment nospace-fragment fade-in-and-out" data-fragment-index="0">
+<blockquote style="border: 1px solid black">
+<b>Twenty-two participants out of 24</b> were able to conduct the amount of daily practice needed for
+the chord identification method, 4–5 sessions a day, almost every day throughout the period of
+the training. Two participants stopped the training for personal reasons unrelated to the current
+project. <b>The remaining 22 participants who continued the training were able to acquire AP.</b>
+</blockquote>
+</div>
+
+<div class="fragment appear" style="margin-top:2em" data-fragment-index="1">
 
 ## Reasons to Try Anyway
 
@@ -61,6 +74,7 @@ I knew about perfect pitch and thought it might be cool to have, but I had alway
 - It can be a bonding experience
 
 </div>
+
 
 Notes:
 
