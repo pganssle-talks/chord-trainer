@@ -20,5 +20,5 @@ Paul Ganssle
 
 Notes:
 
-Good morning! I'm Paul Ganssle, and today I'd like to talk to you about my application implementing the Eguchi method for pitch training.
+Good morning! I'm Paul Ganssle, and today I'd like to talk to you about my application that uses a chord identification method to try to help children acquire absolute pitch.
 

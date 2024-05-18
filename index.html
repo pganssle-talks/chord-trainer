@@ -66,7 +66,7 @@ Paul Ganssle
 
 Notes:
 
-Good morning! I'm Paul Ganssle, and today I'd like to talk to you about my application implementing the Eguchi method for pitch training.
+Good morning! I'm Paul Ganssle, and today I'd like to talk to you about my application that uses a chord identification method to try to help children acquire absolute pitch.
 
 					</textarea>
 				</section>
@@ -75,32 +75,11 @@ Good morning! I'm Paul Ganssle, and today I'd like to talk to you about my appli
 					<textarea data-template>
 # Relative and Absolute Pitch
 
-<div class="gallery two-high fragment disappearing-fragment fade-out" data-fragment-index="0">
-    <div class="gallery-item">
-        <img src="images/frequencies.png"
-          />
-    </div>
-    <div class="gallery-item">
-        <img src="images/frequencies_fft.png"
-          />
-    </div>
-</div>
-
-<img src="images/stock/swatches.png"
-     class="fragment"
-     data-fragment-index="0"
-     >
+<img src="images/stock/swatches.png">
 
 Notes:
 
-To put everyone on the same page, most people have what's called relative pitch — you can tell if one sound is higher or lower than another sound, but you cannot hear a sound and say, "Oh, that's a middle C" without a known reference pitch — that is why, for example, the stereotypical barbershop quartet will have someone blowing into a pitch pipe before they start singing — they know what note that's supposed to be, and they know where they should be singing relative to it.
-
-In contrast, absolute pitch (also sometimes called perfect pitch), is when you can identify notes without the nee
-d of a reference pitch.
-
-To visually demonstrate this, you can see if you look at these three waveforms at the top, it's pretty easy to see which ones are higher and lower frequency than the others, but it would be pretty difficult to estimate the actual frequencies at a glance, but if you were to plot in the fourier domain, you can pretty easily see what frequency each one is just by looking at it.
-
-In some ways I've heard absolute pitch described as perceiving sound more like the way most of us perceive color — you can look at a color and know that it's red or yellow or blue or something, you don't need to compare objects to swatches to determine how red or blue they are, you just look at it and know what color it is.
+OK, so if you don't know, absolute pitch or perfect pitch is basically the ability to hear a note and know what note it is without reference to another pitch. Most people have relative pitch, where we can only tell if one note is higher than another, but not what they are absolutely. My understanding is that people with absolute pitch experience sound the way most of us experience color — if you only had 'relative color', you couldn't look at an object and determine that it is red, but you'd be able to know if it is more or less red than another object.
 
 --
 
@@ -121,7 +100,7 @@ The purpose of this study was to investigate longitudinally the process of acqui
 
 Notes:
 
-I knew about perfect pitch and thought it might be cool to have, but I had always been under the impression that it was not something you could learn — either your brain processes sound this way or it doesn't. But then I came across a paper from 2012 claiming that with enough training, it is possible to acquire absolute pitch in childhood. It comes from a school in Japan called the Ichionkai Music School, and they claim to have a 90% success rate using their method to train children between ages 2 and 6, and conveniently they lay out the method in the paper.
+I always thought it would be cool to have perfect pitch, but I had been under the impression that it was not something you could learn — either your brain processes sound this way or it doesn't. But then I came across a paper from 2012 claiming that with enough training, it is possible to acquire absolute pitch in childhood. It comes from a school in Japan called the Ichionkai Music School, and they claim to have a 90% success rate using their method to train children between ages 2 and 6, and conveniently they lay out the method in the paper.
 
 --
 
@@ -164,13 +143,9 @@ Notes:
 
 There are some reasons to be skeptical of these claims. For one thing, after the advent of the reproducibility crisis — which I strongly suggest you look up if you don't already know about it — we should probably be pretty skeptical of *any* studies, much less non-preregistered accounts coming from a music school that sells books teaching the method.
 
-- One thing that is very fishy about the study to me is that in the paper they say that they recruited 24 students and told the parents that they could stop at any time, then taught them the method and followed their progress. They claim that 2 students dropped out, and the remaining 22 *all* acquired absolute pitch. This seems like a much bigger effect size than I would expect for something where the common wisdom is that it's impossible.
+- To me, though, the fishiest thing about the study is the dropout rate; this method, as you will soon see, involves quizzing 2-6 year olds *five times a day* for *several years*. I imagine anyone who has tried to get a 2-6 year old to do *anything* will find this extremely suspicious — it seems unlikely to me that I could perform a study where 90% of participants consistently get children to brush their teeth twice a day, so I suspect some sort of selection bias is at work here.
 
-- This method, as you will soon see, involves quizzing 2-6 year olds *five times a day* for *several years*. I would submit that getting a 2-6 year old to do *anything* even *once a day* is a challenge. Unless Japanese culture and patterns of life are *very different* around young children than they are here, I would not expect a 90% compliance rate on an invention asking parents to brush their childrens' teeth in the morning and night, so 5 daily practices strains credibility.
-
-That said, it's not impossible that this is just an understudied area, and that no one has really tried this kind of intervention before. And critical periods — where it's easier to do something during a certain part of your life and not in others — are probably a real effect.
-
-At the end of the day, the reason I decided to go for it was that I thought it might be a fun thing to do with my children, and despite being distributed in an annoying way, the overall time commitment is not especially high.
+- That said, I don't think there's been a ton of research either way, and critical effects *probably* are real, and I felt that the investment of time wasn't so high that it might not be worth trying out. Plus it actually has turned out to be a fun bonding experience between my son and I.
 
 					</textarea>
 				</section>
@@ -203,15 +178,18 @@ At the end of the day, the reason I decided to go for it was that I thought it m
 
 Notes:
 
-Which brings us to the method. The paper refers to it as Eguchi's method, and it is described fairly well in the paper, and better in this book — which is written in Japanese, and which I only have a partially translated copy of.
-
-It works by taking a number of chords and associating them with colored flags. You introduce the chords to the child one at a time, quizzing them on the chords until they can get the answer correct 100% of the time, with a minimum of 2 weeks before introducing a new chord.
+Which brings us to the method. Basically it works by taking a number of chords and associating them with colored flags. You introduce the chords to the child one at a time, quizzing them on the chords until they can get the answer correct 100% of the time — with a minimum of two weeks between introducing new chords.
 
 You do 5 sessions a day, and each session is about 25 identifications.
 
 When the child has mastered all the chords, they can scale back the training sessions to maybe once per week — as long as they continue to do it perfectly.
 
+OK, so you want to do the method, presumably you have a piano you can play, and you can generate random sequences of chords in your head. Oh and remember we're doing this 5 times a day, so hopefully you don't like going too far away from your house, or your piano is very portable.
+
+
 --
+
+<!-- .slide: data-visibility="hidden" -->
 
 <style>
 table.chord-chart td {
@@ -323,6 +301,8 @@ The first 9 chords are all white key chords, and you'll notice a lot of repetiti
 For these chords, you are supposed to only use colors and not refer to the note names or the names of the chords.
 
 --
+
+<!-- .slide: data-visibility="hidden" -->
 
 # Black Chords
 
@@ -451,15 +431,13 @@ You'll note that this list of chords doesn't include any inversions — the meth
 
 Notes:
 
-OK, so you want to do the method, presumably you have a piano you can play, and you can generate random sequences of chords in your head. Oh and remember we're doing this 5 times a day, so hopefully you don't like going too far away from your house, or your piano is very portable.
-
 No, of course we're not going to do any of that — this kind of thing is exactly what being a programmer is all about! So obviously I built an app!
 
 I threw together a quick HTML / Javascript / CSS single-page app, permissively-licensed open source, and published via github pages.
 
 Here is what it looks like, it's pretty simple: it displays the chords you are on, it will play one randomly, and you pick which one you think it is. If you get it right, the kitty is happy. If you get it wrong, the kitty is sad.
 
-When the child starts mastering chords. you can move on to the next level, and when you get past the last white key chord, the app automatically starts displaying the note names.
+When the child starts mastering chords. you can move on to the next level. There are 9 "white key" chords, and once they master all of those, you enter the "black key" phase, where they're supposed to start calling out the chords by name rather than color.
 
 --
 
@@ -473,6 +451,8 @@ So, let's see it in action!
 
 --
 
+<!-- .slide: data-visibility="hidden" -->
+
 <div style="display: flex; flex-direction: rows; align-items: center; justify-content:space-around; height: 80dvh">
 <img src="images/pwa-install-app.png" style="max-height:100%; max-width: 30dvh">
 <img src="images/pwa-install-installing.png" style="max-height:100%; max-width: 30dvh">
@@ -481,63 +461,6 @@ So, let's see it in action!
 Notes:
 
 Additionally, I found out that when you have a simple single page application like this, it's fairly easy to turn it into a "progressive web app", so actually if you open it on your phone or tablet in a browser, you can click "install this app", and it will actually install it like a native application.
-
-					</textarea>
-				</section>
-				
-				<section data-markdown data-separator="^\n---\n$" data-separator-vertical="^\n--\n$" data-notes="^Note:">
-					<textarea data-template>
-# Is it Working?
-
-<img src="images/response_history.png"
-     style="height: 40dvh"
-/>
-
-<img src="images/response_history_phase2.png"
-     class="fragment fade-in"
-     style="height: 40dvh"
-/>
-
-Notes:
-
-OK, so presumably the big question you are asking now is — does it work?
-
-The answer I have is: I don't know. My son started using the app just before he turned 6 years old, and he's been doing it for about 10 months now. He has mastered 8 chords and as you can see he's making slow and steady progress towards the final white key chord.
-
---
-
-<!-- .slide: data-visibility="hidden" -->
-
-# Color Progression
-
-- Yellow → Blue: 18.0 days
-- Blue → Black: 32.0 days
-- Black → Green: 25.0 days
-- Green → Orange: <span class="fragment highlight-green" data-fragment-index="0">14.0 days</span>
-- Orange → Purple: <span class="fragment highlight-red" data-fragment-index="1">82.0 days</span>
-- Purple → Pink: <span class="fragment highlight-green" data-fragment-index="0">17.0 days</span>
-- Pink → Brown: <span class="fragment highlight-red" data-fragment-index="1">86.0 days</span>
-
-<br/>
-
-<div class="gallery two-wide">
-<div class="gallery-item">
-    <img src="images/pink_phase2.png"/>
-</div>
-
-<div class="gallery-item">
-    <img src="images/brown.png"/>
-</div>
-
-</div>
-
---
-
-<video src="videos/pitch_test_shorter.webm" controls type="video/webm">
-
-Notes:
-
-I know of one other person using the app, and weirdly she actually started the method *before* the app was developed, so she's a bit ahead of my son. Her dad says she's not perfect on individual note identification yet, but as you can see she seems to be doing pretty well to me.
 
 					</textarea>
 				</section>
