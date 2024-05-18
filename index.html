@@ -1,0 +1,569 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>Using a Progressive Web App to Teach My Son Absolute Pitch</title>
+
+		
+		
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<link rel="stylesheet" href="reveal.js/dist/reveal.css">
+		<link rel="stylesheet" href="reveal.js/css/theme/white.css" id="theme">
+
+	
+		<link rel="stylesheet" href="css/custom.css">
+	
+
+
+		<!-- For syntax highlighting -->
+		
+		<link rel="stylesheet" href="css/xcode-pg.css">
+
+		<!-- If the query includes 'print-pdf', use the PDF print sheet -->
+		<script>
+			document.write( '<link rel="stylesheet" href="reveal.js/css/print/' + ( window.location.search.match( /print-pdf/gi ) ? 'pdf' : 'paper' ) + '.css" type="text/css" media="print">' );
+		</script>
+
+		<!--[if lt IE 9]>
+		<script src="reveal.js/lib/js/html5shiv.js"></script>
+		<![endif]-->
+	</head>
+
+	<body>
+
+		<div class="reveal">
+
+			<div class="slides">
+
+				
+				<section data-markdown data-separator="^\n---\n$" data-separator-vertical="^\n--\n$" data-notes="^Note:">
+					<textarea data-template>
+<h1 style="font-size: 3em; line-height: 2">Teaching Children Perfect Pitch</h1>
+<br/>
+<br/>
+<span style="font-size: 2.5em">
+Paul Ganssle
+</span>
+<br/>
+<br/>
+<img src="images/pganssle-logos.svg" height="40px" alt="@pganssle">
+<br/>
+<br/>
+<span style="font-size: 1em;"><em>This talk on Github:
+<a href="https://github.com/pganssle-talks/chord-trainer">pganssle-talks/chord-trainer</a></em>
+</span>
+<br/>
+<a rel="license" href="https://creativecommons.org/publicdomain/zero/1.0/">
+    <img src="external-images/logos/cc-zero.svg" height="45px">
+</a>
+<br/>
+
+Notes:
+
+This is where speaker notes go.
+
+					</textarea>
+				</section>
+				
+				<section data-markdown data-separator="^\n---\n$" data-separator-vertical="^\n--\n$" data-notes="^Note:">
+					<textarea data-template>
+# Relative and Absolute Pitch
+
+<div class="gallery two-high fragment disappearing-fragment fade-out" data-fragment-index="0">
+    <div class="gallery-item">
+        <img src="images/frequencies.png"
+          />
+    </div>
+    <div class="gallery-item">
+        <img src="images/frequencies_fft.png"
+          />
+    </div>
+</div>
+
+<img src="images/stock/swatches.png"
+     class="fragment"
+     data-fragment-index="0"
+     >
+
+Notes:
+
+To put everyone on the same page, most people have what's called relative pitch — you can tell if one sound is higher or lower than another sound, but you cannot hear a sound and say, "Oh, that's a middle C" without a known reference pitch — that is why, for example, the stereotypical barbershop quartet will have someone blowing into a pitch pipe before they start singing — they know what note that's supposed to be, and they know where they should be singing relative to it.
+
+
+In contrast, absolute pitch (also sometimes called perfect pitch), is when you can identify notes without the nee
+d of a reference pitch.
+
+To visually demonstrate this, you can see if you look at these three waveforms at the top, it's pretty easy to see which ones are higher and lower frequency than the others, but it would be pretty difficult to estimate the actual frequencies at a glance, but if you were to plot in the fourier domain, you can pretty easily see what frequency each one is just by looking at it.
+
+In some ways I've heard absolute pitch described as perceiving sound more like the way most of us perceive color — you can look at a color and know that it's red or yellow or blue or something, you don't need to compare objects to swatches to determine how red or blue they are, you just look at it and know what color it is.
+
+--
+
+# Teaching Absolute Pitch to Children
+
+<img src="images/study_abstract_00.png"
+     class="screenshot splash">
+
+<!--
+     alt="A screenshot of the abstract of a paper in Psychology of Music from 2012. The title is: A longitudinal study of the process of acquiring absolute pitch: A practical report of training with the ‘chord identification method’
+
+The author is Ayako Sakakibara from the Ichionkai Music School, Tokyo, Japan
+
+The abstract is:
+
+The purpose of this study was to investigate longitudinally the process of acquiring absolute pitch (AP). Twenty-four young children (aged 2 to 6 years) without AP were trained to acquire AP using Eguchi’s (1991) Chord Identification Method (CIM). All children were able to acquire AP (except two who ceased training). Results suggest that, at a minimum, children younger than 6 years old are capable of acquiring AP through intentional training. Furthermore, children’s errors observed during training suggested the transition of different strategies relying respectively on tone height and tone chroma. Initially, children identified chords using a strategy depending primarily on tone height, then gradually they began to attend to tone chroma to identify chords and this process ultimately led to acquisition of AP.">
+-->
+
+Notes:
+
+I knew about perfect pitch and thought it might be cool to have, but I had always been under the impression that it was not something you could learn — either your brain processes sound this way or it doesn't. But then I came across a paper from 2012 purporting that it is easier to learn perfect pitch in childhood, with enough training. It comes from a music school in Japan called the Ichionkai Music School. They claim to have a 90% success rate using their method to train children between ages 2 and 6, and conveniently they lay out the method in the paper.
+
+--
+
+## Reasons for Skepticism
+
+- Baseline credence for psychology research should be extremely low
+- Study was performed by the Ichionkai Music School
+- The dropout rate was ridiculously low for this method
+
+<br/>
+<br/>
+
+<div class="fragment disappearing-fragment nospace-fragment fade-out" data-fragment-index="0">
+<img src="images/replication_crisis_wikipedia_ss.png">
+</div>
+
+<div class="fragment disappearing-fragment nospace-fragment fade-in-and-out" data-fragment-index="0">
+<blockquote style="border: 1px solid black">
+<b>Twenty-two participants out of 24</b> were able to conduct the amount of daily practice needed for
+the chord identification method, 4–5 sessions a day, almost every day throughout the period of
+the training. Two participants stopped the training for personal reasons unrelated to the current
+project. <b>The remaining 22 participants who continued the training were able to acquire AP.</b>
+</blockquote>
+</div>
+
+<div class="fragment appear" style="margin-top:2em" data-fragment-index="1">
+
+## Reasons to Try Anyway
+
+- Probably no one is really trying to teach kids perfect pitch
+- Critical period effects are probably real
+- Total time commitment isn't high (though distributed in an annoying way)
+    - ~75-150 hours over 1-2 years
+- It can be a bonding experience
+
+</div>
+
+
+Notes:
+
+- The study was performed by someone whose affiliation was "Ichionkai Music School". I cannot find anything else published by this person except another article about perfect pitch in which their affiliation is also the Ichionkai Music school. This shouldn't immediately disqualify them, but assuming they actually work for the school, it seems very unlikely that they would be publishing studies that do not match their assertions.
+
+- One thing that is very fishy about the study to me is that in the paper they say that they recruited 24 students and told the parents that they could stop at any time, then taught them the method and followed their progress. They claim that 2 students dropped out, and the remaining 22 *all* acquired absolute pitch.
+
+- This method, as you will soon see, involves quizzing 2-6 year olds *five times a day* for *several years*. I built an app implementing this method and my son is unusually conscientious about these sorts of things and I had a lot of trouble getting him to do it even 4 times a day. I gave this app to many people — including musicians who want to foster an interest in music in their children — and as far as I know no one I've sent it to has made a regular habit of using it. It strains my credibility to think that there is not some sort of huge selection effect in play, unless Japanese culture and patterns of life are very different with regards to deliberate and regimented practice in very young children.
+
+					</textarea>
+				</section>
+				
+				<section data-markdown data-separator="^\n---\n$" data-separator-vertical="^\n--\n$" data-notes="^Note:">
+					<textarea data-template>
+# Eguchi's Method: Basics
+
+<figure>
+    <img src="external-images/eguchi-book-cover-upscale.png"
+         class="screenshot splash"
+         alt="Cover of a book featuring a lamp and a metronome. The text is all in Japanese, and reads (from right to left):
+         ピアノレッスンを変える (3) (Side)
+         新·絶対音感プログラ (Title)
+         才能は身につけられる (Text in red)
+         江口寿子 · 江口彩子 — 共著 (Authors)
+         "/>
+    <figcaption><i>New Absolute Pitch Program by Hisako Eguchi and Ayako Eguchi</i></figcaption>
+</caption>
+
+--
+
+# Eguchi's Method
+
+<ul>
+    <li>Chords associated with colored flags</li>
+    <li class="fragment fade-in" data-fragment-index="0">Child must be able to identify each chord with 100% accuracy</li>
+    <li class="fragment fade-in" data-fragment-index="1">New chords are introduced every 2 weeks</li>
+    <li class="fragment fade-in" data-fragment-index="2">Do 25 identifications per session, <u>5 sessions per day</u></li>
+    <li class="fragment fade-in" data-fragment-index="4">When all chords are learned, scale back sessions to maintain 100% accuracy, continue until aged 9</li>
+
+--
+
+<style>
+table.chord-chart td {
+    text-align: center;
+}
+
+td.keyboard img {
+    width: 20dvw;
+}
+
+td.chord-notes {
+    width: 7.5dvw;
+    text-align:center;
+}
+
+td.chord-color {
+    width: 5 dvw;
+}
+
+td.chord-name {
+    width: 7.5 dvw;
+}
+
+td.left-border {
+    border-left: 1px solid black;
+}
+</style>
+
+# White Chords
+<br/>
+
+<table class="chord-chart">
+<tr>
+    <td class="chord-notes fragment custom outline" data-fragment-index="0">C E G</td>
+    <td class="chord-color">Red</td>
+    <td class="chord-name">C</td>
+    <td class="keyboard">
+        <img src="images/color_keyboard/red.svg">
+    </td>
+    <td class="chord-notes left-border">C F A</td>
+    <td class="chord-color">Yellow</td>
+    <td class="chord-name">F/C</td>
+    <td class="keyboard">
+        <img src="images/color_keyboard/yellow.svg">
+    </td>
+</tr>
+<tr>
+    <td class="chord-notes">B D G</td>
+    <td class="chord-color">Blue</td>
+    <td class="chord-name">G/B</td>
+    <td class="keyboard">
+        <img src="images/color_keyboard/blue.svg">
+    </td>
+    <td class="chord-notes left-border">A C F</td>
+    <td class="chord-color">Black</td>
+    <td class="chord-name">F/A</td>
+    <td class="keyboard">
+        <img src="images/color_keyboard/black.svg">
+    </td>
+</tr>
+<tr>
+    <td class="chord-notes">D G B</td>
+    <td class="chord-color">Green</td>
+    <td class="chord-name">G/D</td>
+    <td class="keyboard">
+        <img src="images/color_keyboard/green.svg">
+    </td>
+    <td class="chord-notes left-border fragment custom outline" data-fragment-index="0">E G C</td>
+    <td class="chord-color">Orange</td>
+    <td class="chord-name">C/E</td>
+    <td class="keyboard">
+        <img src="images/color_keyboard/orange.svg">
+    </td>
+</tr>
+<tr>
+    <td class="chord-notes">F A C</td>
+    <td class="chord-color">Purple</td>
+    <td class="chord-name">F</td>
+    <td class="keyboard">
+        <img src="images/color_keyboard/purple.svg">
+    </td>
+    <td class="chord-notes left-border">G B D</td>
+    <td class="chord-color">Pink</td>
+    <td class="chord-name">G</td>
+    <td class="keyboard">
+        <img src="images/color_keyboard/pink.svg">
+    </td>
+</tr>
+<tr colwidth="6">
+<table class="chord-chart">
+<tr>
+    <td class="chord-notes fragment custom outline" data-fragment-index="0">G C E</td>
+    <td class="chord-color">Brown</td>
+    <td class="chord-name">C/G</td>
+    <td class="keyboard">
+        <img src="images/color_keyboard/brown.svg">
+    </td>
+</tr>
+</table>
+</tr>
+</table>
+
+--
+
+# Black Chords
+
+<br/>
+
+<table class="chord-chart">
+<tr>
+    <td class="chord-notes">A C♯ E</td>
+    <td class="chord-color">Gray</td>
+    <td class="chord-name">A</td>
+    <td class="keyboard">
+        <img src="images/color_keyboard/gray.svg">
+    </td>
+    <td colspan="3" rowspan="6" style="border:none; width:32.5dvw">
+        <ul>
+            <li>Can test individual "white note" identification</li>
+            <li class="fragment appear">Switch to calling out note names (C-E-G, A-C♯-E, etc)</li>
+            <li class="fragment appear">Can introduce inversions if having trouble (C♯-E-A, F-D-B♭)</li>
+        </ul>
+    </td>
+</tr>
+<tr>
+    <td class="chord-notes">D F♯ A</td>
+    <td class="chord-color">Tan</td>
+    <td class="chord-name">D</td>
+    <td class="keyboard">
+        <img src="images/color_keyboard/tan.svg">
+    </td>
+<tr>
+<tr>
+    <td class="chord-notes">E G♯ B</td>
+    <td class="chord-color">Light Green</td>
+    <td class="chord-name">E</td>
+    <td class="keyboard">
+        <img src="images/color_keyboard/lightgreen.svg">
+    </td>
+</tr>
+<tr>
+    <td class="chord-notes">B♭ D F</td>
+    <td class="chord-color">Light Purple</td>
+    <td class="chord-name">B♭</td>
+    <td class="keyboard">
+        <img src="images/color_keyboard/lightpurple.svg">
+    </td>
+</tr>
+<tr>
+    <td class="chord-notes">E♭ G B♭</td>
+    <td class="chord-color">Sky Blue</td>
+    <td class="chord-name">E♭</td>
+    <td class="keyboard">
+        <img src="images/color_keyboard/skyblue.svg">
+    </td>
+</tr>
+</table>
+
+					</textarea>
+				</section>
+				
+				<section data-markdown data-separator="^\n---\n$" data-separator-vertical="^\n--\n$" data-notes="^Note:">
+					<textarea data-template>
+<div class="fragment disappearing-fragment fade-out" data-fragment-index="0">
+    <img src="images/vxxx-red-yellow.png"
+         class="screenshot splash"
+         style="height: 75dvh"
+         alt="A screenshot of a simple website with a dark background and two
+              colored rectangles — a red one on the left and a yellow on the right.
+              Beneath it is text that says 0/0 and a pulldown that says 'Yellow (CFA)'"
+              />
+</div>
+
+<div class="fragment disappearing-fragment fade-in-and-out" data-fragment-index="0">
+    <img src="images/vxxx-red-yellow-right.png"
+         class="screenshot splash"
+         style="height: 75dvh"
+         alt="A screenshot of a simple website with a dark background and two
+              colored rectangles — a red one on the left and a yellow on the right.
+              Beneath it is text that says 0/0 and a pulldown that says 'Yellow (CFA)'"
+              />
+</div>
+
+<div class="fragment disappearing-fragment fade-in-and-out" data-fragment-index="1">
+    <img src="images/vxxx-red-yellow-wrong.png"
+         class="screenshot splash"
+         style="height: 75dvh"
+         alt="A screenshot of a simple website with a dark background and two
+              colored rectangles — a red one on the left and a yellow on the right.
+              Beneath it is text that says 0/0 and a pulldown that says 'Yellow (CFA)'"
+              />
+</div>
+
+<div class="fragment disappearing-fragment fade-in" data-fragment-index="2">
+    <img src="images/vxxx-gray.png"
+         class="screenshot splash"
+         style="height: 75dvh"
+         alt="At the gray chord"
+              />
+</div>
+
+<div class="fragment disappearing-fragment fade-in" data-fragment-index="3">
+    <img src="images/vxxx-manual-player.png"
+         class="screenshot splash"
+         style="height: 75dvh"
+         alt="A screenshot of a simple website with a dark background and two
+              colored rectangles — a red one on the left and a yellow on the right.
+              Beneath it is text that says 0/0 and a pulldown that says 'Yellow (CFA)'"
+              />
+</div>
+
+--
+
+<video src="videos/cim_how_to_clip.webm"
+       style="height: 70dvh"
+       controls type="video/webm">
+
+--
+
+<div style="display: flex; flex-direction: rows; align-items: center; justify-content:space-around; height: 80dvh">
+<img src="images/pwa-install-app.png" style="max-height:100%; max-width: 30dvh">
+<img src="images/pwa-install-installing.png" style="max-height:100%; max-width: 30dvh">
+<img src="images/pwa-install-icon.png" style="max-height:100%; max-width: 40dvh">
+
+					</textarea>
+				</section>
+				
+				<section data-markdown data-separator="^\n---\n$" data-separator-vertical="^\n--\n$" data-notes="^Note:">
+					<textarea data-template>
+# Is it Working?
+
+<img src="images/response_history.png"
+     style="height: 40dvh"
+/>
+
+<img src="images/response_history_phase2.png"
+     class="fragment fade-in"
+     style="height: 40dvh"
+/>
+
+--
+
+# Color Progression
+
+- Yellow → Blue: 18.0 days
+- Blue → Black: 32.0 days
+- Black → Green: 25.0 days
+- Green → Orange: <span class="fragment highlight-green" data-fragment-index="0">14.0 days</span>
+- Orange → Purple: <span class="fragment highlight-red" data-fragment-index="1">82.0 days</span>
+- Purple → Pink: <span class="fragment highlight-green" data-fragment-index="0">17.0 days</span>
+- Pink → Brown: <span class="fragment highlight-red" data-fragment-index="1">86.0 days</span>
+
+<br/>
+
+<div class="gallery two-wide">
+<div class="gallery-item">
+    <img src="images/pink_phase2.png"/>
+</div>
+
+<div class="gallery-item">
+    <img src="images/brown.png"/>
+</div>
+
+</div>
+
+--
+
+<video src="videos/pitch_test.webm" controls type="video/webm">
+
+					</textarea>
+				</section>
+				
+				<section data-markdown data-separator="^\n---\n$" data-separator-vertical="^\n--\n$" data-notes="^Note:">
+					<textarea data-template>
+<figure>
+<img src="images/qr.svg" style="height: 50dvh; width: auto; margin-bottom: 0.25em" />
+
+<figcaption style="font-size: 1.5em">
+<a href="https://pganssle.github.io/cim">https://pganssle.github.io/cim</a>
+</figcaption>
+</figure>
+
+
+<em>Can you help?</em>
+
+- More users
+- Help with documentation
+- Code contributions
+- JP → English Translation
+
+					</textarea>
+				</section>
+				
+
+			</div>
+
+<div class="sbcontainer">
+    <img src="images/pganssle-logos-rotated.svg"
+         style="width: 0.9em;"
+         class="sbitem" />
+    <img src="images/cim_rotated.svg"
+         style="width: 0.9em;"
+         class="sbitem" />
+    <img src="images/ganssleio_rotated.svg"
+         style="width: 0.9em;"
+         class="sbitem" />
+    <img src="external-images/logos/zero-black.svg"
+         style="width: 1.5em;
+                margin-bottom: 0.5em;"
+        class="sbitem">
+</div>
+
+
+		</div>
+
+		<script src="reveal.js/dist/reveal.js"></script>
+		<script src="reveal.js/plugin/markdown/markdown.js"></script>
+		<script src="reveal.js/plugin/math/math.js"></script>
+
+		<script src="reveal.js/plugin/zoom/zoom.js"></script>
+		<script src="reveal.js/plugin/highlight/highlight.js"></script>
+		
+			<script src="reveal.js/plugin/notes/notes.js"></script>
+		
+		<script>
+
+			// Full list of configuration options available here:
+			// https://github.com/hakimel/reveal.js#configuration
+			let r = Reveal();
+			r.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+
+				theme: r.getQueryHash().theme, // available themes are in /css/theme
+				transition: 'linear', // default/cube/page/concave/zoom/linear/fade/none
+                plugins: [
+                    RevealMarkdown,
+                    RevealHighlight,
+                    RevealNotes,
+                    RevealZoom,
+                    RevealMath.KaTeX,
+                ],
+
+				
+					
+						// Reveal options generated from mapping
+						
+							width: "95%",
+						
+							height: "95%",
+						
+					
+				
+
+				// The dependencies option is deprecated as of reveal.js 4.0,
+				// but is kept in place for backwards compatibility reasons.
+				dependencies: [
+					
+				]
+			});
+
+		</script>
+
+	</body>
+</html>
