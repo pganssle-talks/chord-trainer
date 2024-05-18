@@ -66,7 +66,7 @@ Paul Ganssle
 
 Notes:
 
-This is where speaker notes go.
+Good morning! I'm Paul Ganssle, and today I'd like to talk to you about my application implementing the Eguchi method for pitch training.
 
 					</textarea>
 				</section>
@@ -95,7 +95,6 @@ Notes:
 
 To put everyone on the same page, most people have what's called relative pitch — you can tell if one sound is higher or lower than another sound, but you cannot hear a sound and say, "Oh, that's a middle C" without a known reference pitch — that is why, for example, the stereotypical barbershop quartet will have someone blowing into a pitch pipe before they start singing — they know what note that's supposed to be, and they know where they should be singing relative to it.
 
-
 In contrast, absolute pitch (also sometimes called perfect pitch), is when you can identify notes without the nee
 d of a reference pitch.
 
@@ -122,7 +121,7 @@ The purpose of this study was to investigate longitudinally the process of acqui
 
 Notes:
 
-I knew about perfect pitch and thought it might be cool to have, but I had always been under the impression that it was not something you could learn — either your brain processes sound this way or it doesn't. But then I came across a paper from 2012 purporting that it is easier to learn perfect pitch in childhood, with enough training. It comes from a music school in Japan called the Ichionkai Music School. They claim to have a 90% success rate using their method to train children between ages 2 and 6, and conveniently they lay out the method in the paper.
+I knew about perfect pitch and thought it might be cool to have, but I had always been under the impression that it was not something you could learn — either your brain processes sound this way or it doesn't. But then I came across a paper from 2012 claiming that with enough training, it is possible to acquire absolute pitch in childhood. It comes from a school in Japan called the Ichionkai Music School, and they claim to have a 90% success rate using their method to train children between ages 2 and 6, and conveniently they lay out the method in the paper.
 
 --
 
@@ -163,22 +162,27 @@ project. <b>The remaining 22 participants who continued the training were able t
 
 Notes:
 
-- The study was performed by someone whose affiliation was "Ichionkai Music School". I cannot find anything else published by this person except another article about perfect pitch in which their affiliation is also the Ichionkai Music school. This shouldn't immediately disqualify them, but assuming they actually work for the school, it seems very unlikely that they would be publishing studies that do not match their assertions.
+There are some reasons to be skeptical of these claims. For one thing, after the advent of the reproducibility crisis — which I strongly suggest you look up if you don't already know about it — we should probably be pretty skeptical of *any* studies, much less non-preregistered accounts coming from a music school that sells books teaching the method.
 
-- One thing that is very fishy about the study to me is that in the paper they say that they recruited 24 students and told the parents that they could stop at any time, then taught them the method and followed their progress. They claim that 2 students dropped out, and the remaining 22 *all* acquired absolute pitch.
+- One thing that is very fishy about the study to me is that in the paper they say that they recruited 24 students and told the parents that they could stop at any time, then taught them the method and followed their progress. They claim that 2 students dropped out, and the remaining 22 *all* acquired absolute pitch. This seems like a much bigger effect size than I would expect for something where the common wisdom is that it's impossible.
 
-- This method, as you will soon see, involves quizzing 2-6 year olds *five times a day* for *several years*. I built an app implementing this method and my son is unusually conscientious about these sorts of things and I had a lot of trouble getting him to do it even 4 times a day. I gave this app to many people — including musicians who want to foster an interest in music in their children — and as far as I know no one I've sent it to has made a regular habit of using it. It strains my credibility to think that there is not some sort of huge selection effect in play, unless Japanese culture and patterns of life are very different with regards to deliberate and regimented practice in very young children.
+- This method, as you will soon see, involves quizzing 2-6 year olds *five times a day* for *several years*. I would submit that getting a 2-6 year old to do *anything* even *once a day* is a challenge. Unless Japanese culture and patterns of life are *very different* around young children than they are here, I would not expect a 90% compliance rate on an invention asking parents to brush their childrens' teeth in the morning and night, so 5 daily practices strains credibility.
+
+That said, it's not impossible that this is just an understudied area, and that no one has really tried this kind of intervention before. And critical periods — where it's easier to do something during a certain part of your life and not in others — are probably a real effect.
+
+At the end of the day, the reason I decided to go for it was that I thought it might be a fun thing to do with my children, and despite being distributed in an annoying way, the overall time commitment is not especially high.
 
 					</textarea>
 				</section>
 				
 				<section data-markdown data-separator="^\n---\n$" data-separator-vertical="^\n--\n$" data-notes="^Note:">
 					<textarea data-template>
-# Eguchi's Method: Basics
+# Eguchi's Method
 
 <figure>
     <img src="external-images/eguchi-book-cover-upscale.png"
-         class="screenshot splash"
+         class="screenshot"
+         style="max-height: 40dvh"
          alt="Cover of a book featuring a lamp and a metronome. The text is all in Japanese, and reads (from right to left):
          ピアノレッスンを変える (3) (Side)
          新·絶対音感プログラ (Title)
@@ -186,11 +190,9 @@ Notes:
          江口寿子 · 江口彩子 — 共著 (Authors)
          "/>
     <figcaption><i>New Absolute Pitch Program by Hisako Eguchi and Ayako Eguchi</i></figcaption>
-</caption>
+</figure>
 
---
-
-# Eguchi's Method
+<br/>
 
 <ul>
     <li>Chords associated with colored flags</li>
@@ -198,6 +200,16 @@ Notes:
     <li class="fragment fade-in" data-fragment-index="1">New chords are introduced every 2 weeks</li>
     <li class="fragment fade-in" data-fragment-index="2">Do 25 identifications per session, <u>5 sessions per day</u></li>
     <li class="fragment fade-in" data-fragment-index="4">When all chords are learned, scale back sessions to maintain 100% accuracy, continue until aged 9</li>
+
+Notes:
+
+Which brings us to the method. The paper refers to it as Eguchi's method, and it is described fairly well in the paper, and better in this book — which is written in Japanese, and which I only have a partially translated copy of.
+
+It works by taking a number of chords and associating them with colored flags. You introduce the chords to the child one at a time, quizzing them on the chords until they can get the answer correct 100% of the time, with a minimum of 2 weeks before introducing a new chord.
+
+You do 5 sessions a day, and each session is about 25 identifications.
+
+When the child has mastered all the chords, they can scale back the training sessions to maybe once per week — as long as they continue to do it perfectly.
 
 --
 
@@ -302,6 +314,14 @@ td.left-border {
 </tr>
 </table>
 
+Notes:
+
+The chords are split into two groups, the white key chords and the black key chords.
+
+The first 9 chords are all white key chords, and you'll notice a lot of repetition here — for example red, orange and brown are all made up of E, G, and C. Basically, these are 3 chords - C, F and G, and the two "inversions" of those chords — where you move the root of the chord to one other than the nominal note.
+
+For these chords, you are supposed to only use colors and not refer to the note names or the names of the chords.
+
 --
 
 # Black Chords
@@ -358,6 +378,14 @@ td.left-border {
 </tr>
 </table>
 
+Notes:
+
+After the child has mastered the white key chords, according to the book they should be able to perfectly pick out the individual "white key" notes in that range.
+
+This is also the point at which you start introducing the names for individual notes, so they stop calling out "red" and start calling out "C-E-G".
+
+You'll note that this list of chords doesn't include any inversions — the method suggests starting with these 5 and only introducing inversions if the child is having trouble mastering these chords.
+
 					</textarea>
 				</section>
 				
@@ -393,7 +421,17 @@ td.left-border {
               />
 </div>
 
-<div class="fragment disappearing-fragment fade-in" data-fragment-index="2">
+<div class="fragment disappearing-fragment fade-in-and-out" data-fragment-index="2">
+    <img src="images/vxxx-green.png"
+         class="screenshot splash"
+         style="height: 75dvh"
+         alt="A screenshot of a simple website with a dark background and two
+              colored rectangles — a red one on the left and a yellow on the right.
+              Beneath it is text that says 0/0 and a pulldown that says 'Yellow (CFA)'"
+              />
+</div>
+
+<div class="fragment disappearing-fragment fade-in" data-fragment-index="3">
     <img src="images/vxxx-gray.png"
          class="screenshot splash"
          style="height: 75dvh"
@@ -401,7 +439,7 @@ td.left-border {
               />
 </div>
 
-<div class="fragment disappearing-fragment fade-in" data-fragment-index="3">
+<div class="fragment disappearing-fragment fade-in" data-fragment-index="4">
     <img src="images/vxxx-manual-player.png"
          class="screenshot splash"
          style="height: 75dvh"
@@ -411,11 +449,27 @@ td.left-border {
               />
 </div>
 
+Notes:
+
+OK, so you want to do the method, presumably you have a piano you can play, and you can generate random sequences of chords in your head. Oh and remember we're doing this 5 times a day, so hopefully you don't like going too far away from your house, or your piano is very portable.
+
+No, of course we're not going to do any of that — this kind of thing is exactly what being a programmer is all about! So obviously I built an app!
+
+I threw together a quick HTML / Javascript / CSS single-page app, permissively-licensed open source, and published via github pages.
+
+Here is what it looks like, it's pretty simple: it displays the chords you are on, it will play one randomly, and you pick which one you think it is. If you get it right, the kitty is happy. If you get it wrong, the kitty is sad.
+
+When the child starts mastering chords. you can move on to the next level, and when you get past the last white key chord, the app automatically starts displaying the note names.
+
 --
 
 <video src="videos/cim_how_to_clip.webm"
        style="height: 70dvh"
        controls type="video/webm">
+
+Notes:
+
+So, let's see it in action!
 
 --
 
@@ -423,6 +477,10 @@ td.left-border {
 <img src="images/pwa-install-app.png" style="max-height:100%; max-width: 30dvh">
 <img src="images/pwa-install-installing.png" style="max-height:100%; max-width: 30dvh">
 <img src="images/pwa-install-icon.png" style="max-height:100%; max-width: 40dvh">
+
+Notes:
+
+Additionally, I found out that when you have a simple single page application like this, it's fairly easy to turn it into a "progressive web app", so actually if you open it on your phone or tablet in a browser, you can click "install this app", and it will actually install it like a native application.
 
 					</textarea>
 				</section>
@@ -440,7 +498,15 @@ td.left-border {
      style="height: 40dvh"
 />
 
+Notes:
+
+OK, so presumably the big question you are asking now is — does it work?
+
+The answer I have is: I don't know. My son started using the app just before he turned 6 years old, and he's been doing it for about 10 months now. He has mastered 8 chords and as you can see he's making slow and steady progress towards the final white key chord.
+
 --
+
+<!-- .slide: data-visibility="hidden" -->
 
 # Color Progression
 
@@ -467,7 +533,11 @@ td.left-border {
 
 --
 
-<video src="videos/pitch_test.webm" controls type="video/webm">
+<video src="videos/pitch_test_shorter.webm" controls type="video/webm">
+
+Notes:
+
+I know of one other person using the app, and weirdly she actually started the method *before* the app was developed, so she's a bit ahead of my son. Her dad says she's not perfect on individual note identification yet, but as you can see she seems to be doing pretty well to me.
 
 					</textarea>
 				</section>
@@ -489,6 +559,10 @@ td.left-border {
 - Help with documentation
 - Code contributions
 - JP → English Translation
+
+Notes:
+
+So, that is my talk, here's a link to the application, and if you're interested I'd love to have more users or contributors. We could use help with documentation, with code, or also if you are interested in translating parts of a book from Japanese to English, please get in touch!
 
 					</textarea>
 				</section>

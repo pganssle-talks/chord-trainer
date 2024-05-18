@@ -20,5 +20,5 @@ Paul Ganssle
 
 Notes:
 
-This is where speaker notes go.
+Good morning! I'm Paul Ganssle, and today I'd like to talk to you about my application implementing the Eguchi method for pitch training.
 
