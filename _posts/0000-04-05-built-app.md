@@ -58,15 +58,13 @@
 
 Notes:
 
-OK, so you want to do the method, presumably you have a piano you can play, and you can generate random sequences of chords in your head. Oh and remember we're doing this 5 times a day, so hopefully you don't like going too far away from your house, or your piano is very portable.
-
 No, of course we're not going to do any of that — this kind of thing is exactly what being a programmer is all about! So obviously I built an app!
 
 I threw together a quick HTML / Javascript / CSS single-page app, permissively-licensed open source, and published via github pages.
 
 Here is what it looks like, it's pretty simple: it displays the chords you are on, it will play one randomly, and you pick which one you think it is. If you get it right, the kitty is happy. If you get it wrong, the kitty is sad.
 
-When the child starts mastering chords. you can move on to the next level, and when you get past the last white key chord, the app automatically starts displaying the note names.
+When the child starts mastering chords. you can move on to the next level. There are 9 "white key" chords, and once they master all of those, you enter the "black key" phase, where they're supposed to start calling out the chords by name rather than color.
 
 --
 
@@ -79,6 +77,8 @@ Notes:
 So, let's see it in action!
 
 --
+
+<!-- .slide: data-visibility="hidden" -->
 
 <div style="display: flex; flex-direction: rows; align-items: center; justify-content:space-around; height: 80dvh">
 <img src="images/pwa-install-app.png" style="max-height:100%; max-width: 30dvh">

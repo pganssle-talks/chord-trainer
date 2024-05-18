@@ -24,15 +24,18 @@
 
 Notes:
 
-Which brings us to the method. The paper refers to it as Eguchi's method, and it is described fairly well in the paper, and better in this book — which is written in Japanese, and which I only have a partially translated copy of.
-
-It works by taking a number of chords and associating them with colored flags. You introduce the chords to the child one at a time, quizzing them on the chords until they can get the answer correct 100% of the time, with a minimum of 2 weeks before introducing a new chord.
+Which brings us to the method. Basically it works by taking a number of chords and associating them with colored flags. You introduce the chords to the child one at a time, quizzing them on the chords until they can get the answer correct 100% of the time — with a minimum of two weeks between introducing new chords.
 
 You do 5 sessions a day, and each session is about 25 identifications.
 
 When the child has mastered all the chords, they can scale back the training sessions to maybe once per week — as long as they continue to do it perfectly.
 
+OK, so you want to do the method, presumably you have a piano you can play, and you can generate random sequences of chords in your head. Oh and remember we're doing this 5 times a day, so hopefully you don't like going too far away from your house, or your piano is very portable.
+
+
 --
+
+<!-- .slide: data-visibility="hidden" -->
 
 <style>
 table.chord-chart td {
@@ -144,6 +147,8 @@ The first 9 chords are all white key chords, and you'll notice a lot of repetiti
 For these chords, you are supposed to only use colors and not refer to the note names or the names of the chords.
 
 --
+
+<!-- .slide: data-visibility="hidden" -->
 
 # Black Chords
 
