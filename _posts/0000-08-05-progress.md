@@ -9,7 +9,15 @@
      style="height: 40dvh"
 />
 
+Notes:
+
+OK, so presumably the big question you are asking now is — does it work?
+
+The answer I have is: I don't know. My son started using the app just before he turned 6 years old, and he's been doing it for about 10 months now. He has mastered 8 chords and as you can see he's making slow and steady progress towards the final white key chord.
+
 --
+
+<!-- .slide: data-visibility="hidden" -->
 
 # Color Progression
 
@@ -36,4 +44,8 @@
 
 --
 
-<video src="videos/pitch_test.webm" controls type="video/webm">
+<video src="videos/pitch_test_shorter.webm" controls type="video/webm">
+
+Notes:
+
+I know of one other person using the app, and weirdly she actually started the method *before* the app was developed, so she's a bit ahead of my son. Her dad says she's not perfect on individual note identification yet, but as you can see she seems to be doing pretty well to me.

@@ -20,7 +20,6 @@ Notes:
 
 To put everyone on the same page, most people have what's called relative pitch — you can tell if one sound is higher or lower than another sound, but you cannot hear a sound and say, "Oh, that's a middle C" without a known reference pitch — that is why, for example, the stereotypical barbershop quartet will have someone blowing into a pitch pipe before they start singing — they know what note that's supposed to be, and they know where they should be singing relative to it.
 
-
 In contrast, absolute pitch (also sometimes called perfect pitch), is when you can identify notes without the nee
 d of a reference pitch.
 
@@ -47,7 +46,7 @@ The purpose of this study was to investigate longitudinally the process of acqui
 
 Notes:
 
-I knew about perfect pitch and thought it might be cool to have, but I had always been under the impression that it was not something you could learn — either your brain processes sound this way or it doesn't. But then I came across a paper from 2012 purporting that it is easier to learn perfect pitch in childhood, with enough training. It comes from a music school in Japan called the Ichionkai Music School. They claim to have a 90% success rate using their method to train children between ages 2 and 6, and conveniently they lay out the method in the paper.
+I knew about perfect pitch and thought it might be cool to have, but I had always been under the impression that it was not something you could learn — either your brain processes sound this way or it doesn't. But then I came across a paper from 2012 claiming that with enough training, it is possible to acquire absolute pitch in childhood. It comes from a school in Japan called the Ichionkai Music School, and they claim to have a 90% success rate using their method to train children between ages 2 and 6, and conveniently they lay out the method in the paper.
 
 --
 
@@ -88,9 +87,12 @@ project. <b>The remaining 22 participants who continued the training were able t
 
 Notes:
 
-- The study was performed by someone whose affiliation was "Ichionkai Music School". I cannot find anything else published by this person except another article about perfect pitch in which their affiliation is also the Ichionkai Music school. This shouldn't immediately disqualify them, but assuming they actually work for the school, it seems very unlikely that they would be publishing studies that do not match their assertions.
+There are some reasons to be skeptical of these claims. For one thing, after the advent of the reproducibility crisis — which I strongly suggest you look up if you don't already know about it — we should probably be pretty skeptical of *any* studies, much less non-preregistered accounts coming from a music school that sells books teaching the method.
 
-- One thing that is very fishy about the study to me is that in the paper they say that they recruited 24 students and told the parents that they could stop at any time, then taught them the method and followed their progress. They claim that 2 students dropped out, and the remaining 22 *all* acquired absolute pitch.
+- One thing that is very fishy about the study to me is that in the paper they say that they recruited 24 students and told the parents that they could stop at any time, then taught them the method and followed their progress. They claim that 2 students dropped out, and the remaining 22 *all* acquired absolute pitch. This seems like a much bigger effect size than I would expect for something where the common wisdom is that it's impossible.
 
-- This method, as you will soon see, involves quizzing 2-6 year olds *five times a day* for *several years*. I built an app implementing this method and my son is unusually conscientious about these sorts of things and I had a lot of trouble getting him to do it even 4 times a day. I gave this app to many people — including musicians who want to foster an interest in music in their children — and as far as I know no one I've sent it to has made a regular habit of using it. It strains my credibility to think that there is not some sort of huge selection effect in play, unless Japanese culture and patterns of life are very different with regards to deliberate and regimented practice in very young children.
+- This method, as you will soon see, involves quizzing 2-6 year olds *five times a day* for *several years*. I would submit that getting a 2-6 year old to do *anything* even *once a day* is a challenge. Unless Japanese culture and patterns of life are *very different* around young children than they are here, I would not expect a 90% compliance rate on an invention asking parents to brush their childrens' teeth in the morning and night, so 5 daily practices strains credibility.
 
+That said, it's not impossible that this is just an understudied area, and that no one has really tried this kind of intervention before. And critical periods — where it's easier to do something during a certain part of your life and not in others — are probably a real effect.
+
+At the end of the day, the reason I decided to go for it was that I thought it might be a fun thing to do with my children, and despite being distributed in an annoying way, the overall time commitment is not especially high.

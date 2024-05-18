@@ -1,8 +1,9 @@
-# Eguchi's Method: Basics
+# Eguchi's Method
 
 <figure>
     <img src="external-images/eguchi-book-cover-upscale.png"
-         class="screenshot splash"
+         class="screenshot"
+         style="max-height: 40dvh"
          alt="Cover of a book featuring a lamp and a metronome. The text is all in Japanese, and reads (from right to left):
          ピアノレッスンを変える (3) (Side)
          新·絶対音感プログラ (Title)
@@ -10,11 +11,9 @@
          江口寿子 · 江口彩子 — 共著 (Authors)
          "/>
     <figcaption><i>New Absolute Pitch Program by Hisako Eguchi and Ayako Eguchi</i></figcaption>
-</caption>
+</figure>
 
---
-
-# Eguchi's Method
+<br/>
 
 <ul>
     <li>Chords associated with colored flags</li>
@@ -22,6 +21,16 @@
     <li class="fragment fade-in" data-fragment-index="1">New chords are introduced every 2 weeks</li>
     <li class="fragment fade-in" data-fragment-index="2">Do 25 identifications per session, <u>5 sessions per day</u></li>
     <li class="fragment fade-in" data-fragment-index="4">When all chords are learned, scale back sessions to maintain 100% accuracy, continue until aged 9</li>
+
+Notes:
+
+Which brings us to the method. The paper refers to it as Eguchi's method, and it is described fairly well in the paper, and better in this book — which is written in Japanese, and which I only have a partially translated copy of.
+
+It works by taking a number of chords and associating them with colored flags. You introduce the chords to the child one at a time, quizzing them on the chords until they can get the answer correct 100% of the time, with a minimum of 2 weeks before introducing a new chord.
+
+You do 5 sessions a day, and each session is about 25 identifications.
+
+When the child has mastered all the chords, they can scale back the training sessions to maybe once per week — as long as they continue to do it perfectly.
 
 --
 
@@ -126,6 +135,14 @@ td.left-border {
 </tr>
 </table>
 
+Notes:
+
+The chords are split into two groups, the white key chords and the black key chords.
+
+The first 9 chords are all white key chords, and you'll notice a lot of repetition here — for example red, orange and brown are all made up of E, G, and C. Basically, these are 3 chords - C, F and G, and the two "inversions" of those chords — where you move the root of the chord to one other than the nominal note.
+
+For these chords, you are supposed to only use colors and not refer to the note names or the names of the chords.
+
 --
 
 # Black Chords
@@ -182,3 +199,10 @@ td.left-border {
 </tr>
 </table>
 
+Notes:
+
+After the child has mastered the white key chords, according to the book they should be able to perfectly pick out the individual "white key" notes in that range.
+
+This is also the point at which you start introducing the names for individual notes, so they stop calling out "red" and start calling out "C-E-G".
+
+You'll note that this list of chords doesn't include any inversions — the method suggests starting with these 5 and only introducing inversions if the child is having trouble mastering these chords.
